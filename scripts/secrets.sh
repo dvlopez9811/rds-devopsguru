@@ -1,0 +1,15 @@
+export TEST1DBUSER=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test1" --query 'SecretString' --output text | jq -r '."username"'`
+export TEST1PORT=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test1" --query 'SecretString' --output text | jq -r '."port"'`
+export TEST1DB=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test1" --query 'SecretString' --output text | jq -r '."dbname"'`
+export TEST1HOST=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test1" --query 'SecretString' --output text | jq -r '."host"'`
+export TEST1DBPASSWORD=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test1" --query 'SecretString' --output text | jq -r '."password"'`
+export TEST2DBUSER=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test2" --query 'SecretString' --output text | jq -r '."username"'`
+export TEST2PORT=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test2" --query 'SecretString' --output text | jq -r '."port"'`
+export TEST2DB=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test2" --query 'SecretString' --output text | jq -r '."dbname"'`
+export TEST2HOST=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test2" --query 'SecretString' --output text | jq -r '."host"'`
+export TEST2DBPASSWORD=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test2" --query 'SecretString' --output text | jq -r '."password"'`
+export TEST3DBUSER=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test3" --query 'SecretString' --output text | jq -r '."username"'`
+export TEST3PORT=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test3" --query 'SecretString' --output text | jq -r '."port"'`
+export TEST3DB=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test3" --query 'SecretString' --output text | jq -r '."dbname"'`
+export TEST3HOST=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test3" --query 'SecretString' --output text | jq -r '."host"'`
+export TEST3DBPASSWORD=`aws secretsmanager get-secret-value  --secret-id "/devopsgurudemo/dbsecret-test3" --query 'SecretString' --output text | jq -r '."password"'`
